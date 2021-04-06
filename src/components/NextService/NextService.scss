@@ -1,0 +1,60 @@
+
+.next-service{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	&:hover{
+	  color: #fff;
+	}
+  }
+  h1{
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 40px;
+	font-weight: 700;
+	transition: ease-in-out 500ms;
+  }
+  svg{
+	fill: #fff;
+	transition: ease-in-out 500ms;
+  }
+  &:hover{
+	h1{
+	  transform: scale(0.8);
+	}
+	svg{
+	  transform: scale(1.2);
+	}
+  }
+}
+
+.lashes-next{
+  background-image: linear-gradient(135deg, #6D02C3 0%, #9A2BAA 100%);
+}
+
+.nails-next{
+  background-image: linear-gradient(-135deg, #DE437B 17%, #FF4AA2 100%);
+}
+
+.spa-next{
+  background-image: linear-gradient(-45deg, #22BD5F 0%, #006A86 100%);
+}
+
+.body-next{
+  background-image: linear-gradient(135deg, #ED7421 0%, #BCA943 100%);
+}
+
+.face-next{
+  background-image: linear-gradient(135deg, #B151C0 0%, #B903D5 100%);
+}
+
+.makeup-next{
+  background-image: linear-gradient(135deg, #BD2311 0%, #C9453C 100%);
+}

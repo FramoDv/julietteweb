@@ -1,0 +1,79 @@
+.price{
+  width: 320px;
+  height: 320px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 100%;
+  h3{
+    font-family: "montserrat", sans-serif;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  h1{
+    color: #fff;
+    margin: 0;
+  }
+  .content{
+    div{
+      height: 2px;
+      width: 100px;
+      background: #fff;
+      margin: 24px auto;
+    }
+  }
+  span{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    opacity: 0.25;
+    border-radius: 70px;
+    z-index: 1;
+    background-color: #7E0B3C;
+  }
+  .circle1{
+    top: 36px;
+    left: 0;
+  }
+  .circle2{
+    bottom: 36px;
+    right: 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .price {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 40px;
+  }
+}
+
+.nailsCircle{
+  background-image: linear-gradient(-135deg, #DE437B 17%, #FF4AA2 100%);
+}
+
+.lashesCircle{
+  background-image: linear-gradient(135deg, #6D02C3 0%, #9A2BAA 100%);
+}
+
+.spaCircle{
+  background-image: linear-gradient(-45deg, #22BD5F 0%, #006A86 100%);
+}
+
+.bodyCircle{
+  background-image: linear-gradient(135deg, #ED7421 0%, #BCA943 100%);
+}
+
+.faceCircle{
+  background-image: linear-gradient(135deg, #B151C0 0%, #B903D5 100%);
+}
+
+.makeupCircle{
+  background-image: linear-gradient(135deg, #BD2311 0%, #C9453C 100%);
+}
