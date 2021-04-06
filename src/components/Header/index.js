@@ -1,20 +1,11 @@
 import {Link} from "gatsby";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Logo from '../../assets/juliette-icon.svg';
 import Phone from '../../assets/phone.svg'
 import Location from '../../assets/location.svg'
 import './Header.scss';
 
-const Header = ({siteTitle}) => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-
-    useEffect(() => {
-        if (typeof window !== 'undefined' && window.scrollY !== 0) {
-            setScrollPosition(window.scrollY);
-        }
-    }, []);
-
-    console.log(scrollPosition)
+const Header = () => {
 
     return <header>
         <nav>
