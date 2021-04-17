@@ -2,9 +2,9 @@ import React from "react"
 import Seo from "../components/seo"
 import withLayout from "../layout";
 import NailsService from "../assets/nailsService.svg";
-import PriceCircular from "../components/PriceCircular/PriceCircular";
 import ImageComponent from "../components/Ui/ImageComponent.js";
 import NextService from "../components/NextService/NextService.js";
+import PriceLinear from "../components/PriceLinear/PriceLinear.js";
 
 const NailsPage = () => {
 
@@ -43,17 +43,17 @@ const NailsPage = () => {
                             delicato.
                         </p>
                     </div>
-                    <div className="col-md-6 col-12 mt-5">
+                    <div className="col-md-5 col-12 mt-5 offset-md-1">
                         <h3>Manutenzione</h3>
                         <ul>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699', marginBottom: 12}}>
                             <span
                                 style={{color: '#fff'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
                             </li>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699', marginBottom: 12}}>
                                 <span style={{color: '#fff'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
                             </li>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699', marginBottom: 12}}>
                                 <span style={{color: '#fff'}}>ripetere il refill ogni tre settimane (per unghie sensibili ogni due settimane e mezzo).</span>
                             </li>
                         </ul>
@@ -83,17 +83,17 @@ const NailsPage = () => {
                             (mandorla, quadrata, ovale, ballerina, stiletto)
                         </p>
                     </div>
-                    <div className="col-md-6 col-12 mt-5">
+                    <div className="col-md-5 col-12 mt-5 offset-md-1">
                         <h3>Manutenzione</h3>
                         <ul>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699', marginBottom: 12}}>
                             <span
                                 style={{color: '#fff'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
                             </li>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699',marginBottom: 12}}>
                                 <span style={{color: '#fff'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
                             </li>
-                            <li style={{color: '#F24699'}}>
+                            <li style={{color: '#F24699',marginBottom: 12}}>
                                 <span style={{color: '#fff'}}>Ripetere il refill ogni tre settimane (massimo quattro settimane se non sono troppo lunghe).</span>
                             </li>
                         </ul>
@@ -103,10 +103,34 @@ const NailsPage = () => {
 
             <div className="container">
                 <div className="row align-items-start mt-120 justify-content-center">
-                    <div className="col-12 text-center mb-80">
+                    <div className="col-12 mb-80">
                         <h1 className={'price-title'}>Listino Prezzi</h1>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={70} serviceType={'nails'} title={'Ricostruzione'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={50} serviceType={'nails'} title={'Gel su unghia naturale'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={33} serviceType={'nails'} title={'Refill'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={35} serviceType={'nails'} title={'French'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={20} serviceType={'nails'} title={'French'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={15} serviceType={'nails'} title={'Manicure'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={23} serviceType={'nails'} title={'Semipermanente'}/>
+                    </div>
+                    <div className="col-12 mb-5">
+                        <PriceLinear price={25} serviceType={'nails'} title={'Semipermanente rafforzato'}/>
+                    </div>
+                   {/* <div className="col-lg-4 col-md-6 col-12">
                         <PriceCircular price={70} serviceType={'nails'} title={'Ricostruzione'}/>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
@@ -119,7 +143,7 @@ const NailsPage = () => {
                         <PriceCircular price={35} serviceType={'nails'} title={'French'}/>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 mt-lg-5">
-                        <PriceCircular price={20} serviceType={'nails'} title={'Rimozione'}/>
+                        <PriceCircular price={20} serviceType={'nails'} title={'French'}/>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 mt-lg-5">
                         <PriceCircular price={15} serviceType={'nails'} title={'Manicure'}/>
@@ -129,7 +153,7 @@ const NailsPage = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 mt-lg-5">
                         <PriceCircular price={25} serviceType={'nails'} title={<i style={{fontStyle: 'unset', fontSize: 30}}> Semipermanente <br/> rafforzato </i>}/>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </div>

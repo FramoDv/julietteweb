@@ -1,0 +1,78 @@
+.priceLinear{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 2px solid;
+  h3{
+    font-family: "montserrat", sans-serif;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+  }
+  h1{
+    color: #fff;
+    margin: 0;
+    span{
+      transition: ease-in-out 400ms;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .priceLinear {
+    h3{
+      font-family: "montserrat", sans-serif;
+      color: #fff;
+      z-index: 2;
+      position: relative;
+      font-size: 20px;
+    }
+    h1{
+      color: #fff;
+      margin: 0;
+      font-size: 32px;
+      min-width: 100px;
+      text-align: right;
+    }
+  }
+}
+
+.nails{
+  border-bottom-color: #FF4AA2;
+  &:hover{
+    h1{
+      span{
+        color: #FF4AA2;
+      }
+    }
+  }
+}
+
+.lashes{
+  border-bottom-color: #6D02C3;
+  h1{
+    span{
+      color: #6D02C3;
+    }
+  }
+}
+
+.spa{
+  border-bottom-color: #006A86;
+}
+
+.body{
+  border-bottom-color: #BCA943;
+}
+
+.face{
+  border-bottom-color: #ED7421;
+}
+
+.makeup{
+  border-bottom-color: #BD2311;
+}
