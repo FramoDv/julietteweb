@@ -51,7 +51,7 @@ export const photos = [
 ];
 
 
-const Gallery = () => {
+const MosaicGallery = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -86,4 +86,4 @@ const Gallery = () => {
     );
 }
 
-export default Gallery;
+export default MosaicGallery;
