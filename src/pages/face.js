@@ -5,8 +5,6 @@ import FaceService from "../assets/faceService.svg";
 import ImageComponent from "../components/Ui/ImageComponent.js";
 import NextService from "../components/NextService/NextService.js";
 import PriceLinear from "../components/PriceLinear/PriceLinear.js";
-import Gallery from "../components/Gallery.js";
-import MosaicGallery from "../components/Gallery.js";
 
 const FacePage = () => {
 
@@ -71,14 +69,6 @@ const FacePage = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <PriceLinear price={20} serviceType={'face'} title={'Rimozione'}/>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <MosaicGallery/>
                     </div>
                 </div>
             </div>
