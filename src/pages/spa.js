@@ -22,7 +22,7 @@ const LashesPage = () => {
                         <ImageComponent alt={'ciglia'} filename={'spaheader.jpg'}/>
                     </div>
                 </div>
-                <div className="row align-items-start m-120">
+                <div className="row align-items-start mt-120 mb-120">
                     <div className="col-md-10 col-12">
                         <h2 style={{color: '#297B7C'}}>SPA</h2>
                         <p>Una mini SPA dove effettuare tutti i tipi di massaggi di tipo occidentale (massaggio sportivo, massaggio linfodrenaggio, tonificante...) e di tipo orientale (massaggio Hawaiano, massaggio Pinda, massaggio relax…).
@@ -36,8 +36,24 @@ const LashesPage = () => {
                 </div>
             </div>
 
-            <div className='service-full-image' style={{  maxHeight: 760}}>
+            <div className='service-full-image mb-120' style={{  maxHeight: 760}}>
                 <ImageComponent alt={'sguardo exension ciglia'} filename={'spawide.jpg'}/>
+            </div>
+
+            <div style={{backgroundColor:'#212121', padding: '40px 0', borderRadius: "350px 0 0 350px"}}>
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-md-3">
+                            <h1>I nostri <br/> Partner </h1>
+                        </div>
+                        <div className="col-md-3 mt-sm-0 mt-5 col-12 text-md-center text-right">
+                            <ImageComponent alt={'indigo'} filename={'indigo.png'}/>
+                        </div>
+                        <div className="col-md-3 mt-sm-0 mt-5 col-12 text-md-center text-right">
+                            <ImageComponent alt={'indigo'} filename={'indigo.png'}/>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="container">
