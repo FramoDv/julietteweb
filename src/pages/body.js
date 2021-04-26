@@ -14,7 +14,7 @@ const BodyPage = () => {
                 <div className="row align-items-center">
                     <div className="col-md-6 col-12">
                         <BodyService id={'body'}/>
-                        <h1 className='mt-lg-5 mb-md-0 mt-3 mb-3'>Il meglio per <span style={{color: '#a35602'}}> la tua silhouette.</span>
+                        <h1 className='mt-lg-3 mb-md-0 mt-2 mb-2'>Il meglio per <span style={{color: '#a35602'}}> la tua silhouette.</span>
                         </h1>
                     </div>
                     <div className="col-md-6 col-12">
