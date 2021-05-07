@@ -240,7 +240,7 @@ textarea {
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #E9CEC0;
 }
 
 ul.list-unstyled {
@@ -279,8 +279,8 @@ a.link-no-decoration {
 
 /** Home **/
 .homeWrapper{
-  background-image: linear-gradient(0deg, #191919 0%, #0A0A0A 100%);
-  min-height: calc(100vh - 34px);
+  background: #E9CEC0;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -292,16 +292,20 @@ a.link-no-decoration {
 /** Services **/
 .wrapper{
   padding: 120px 0 80px 0;
-  background-image: linear-gradient(0deg, #191919 0%, #0A0A0A 100%);
+  background: #E9CEC0;
   min-height: 100vh;
 }
 
 .service{
-  color: #fff;
+
   h1{
     font-family: "Nunito Sans", sans-serif;
     font-size: 60px;
     font-weight: 900;
+    color: #fff;
+    span{
+      color: #D56681;
+    }
   }
   h2{
     font-family: "Nunito Sans", sans-serif;
@@ -318,15 +322,15 @@ a.link-no-decoration {
   p{
     font-family: "montserrat", sans-serif;
     font-size: 24px;
-    color: #fff;
+    color: #404040;
   }
   ul{
     padding: 0 0 0 24px;
     font-size: 24px;
-    color: #fff;
+    color: #404040;
     font-family: "montserrat", sans-serif;
     li{
-
+      color: #404040;
     }
   }
   .price-title{
@@ -371,7 +375,7 @@ a.link-no-decoration {
 
 /** Footer **/
 footer{
-  background: #212121;
+  background: #AB6878;
   color: #fff;
   font-size: 12px;
   padding: 8px 0;

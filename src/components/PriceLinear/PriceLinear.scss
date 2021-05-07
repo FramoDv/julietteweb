@@ -20,6 +20,7 @@
 	margin: 0;
 
 	span {
+		color: #fff;
 	  transition: ease-in-out 400ms;
 	}
   }
@@ -46,73 +47,73 @@
 }
 
 .nails {
-  border-bottom-color: #FF4AA2;
+  border-bottom-color: #D56681;
 
   &:hover {
 	h1 {
 	  span {
-		color: #FF4AA2;
+		color: #D56681;
 	  }
 	}
   }
 }
 
 .lashes {
-  border-bottom-color: #6D02C3;
+	border-bottom-color: #D56681;
 
-  &:hover {
-	h1 {
-	  span {
-		color: #6D02C3;
-	  }
+	&:hover {
+		h1 {
+			span {
+				color: #D56681;
+			}
+		}
 	}
-  }
 }
 
 .spa {
-  border-bottom-color: #006A86;
+	border-bottom-color: #D56681;
 
-  &:hover {
-	h1 {
-	  span {
-		color: #006A86;
-	  }
+	&:hover {
+		h1 {
+			span {
+				color: #D56681;
+			}
+		}
 	}
-  }
 }
 
 .body {
-  border-bottom-color: #a35602;
+	border-bottom-color: #D56681;
 
-  &:hover {
-	h1 {
-	  span {
-		color: #a35602;
-	  }
+	&:hover {
+		h1 {
+			span {
+				color: #D56681;
+			}
+		}
 	}
-  }
 }
 
 .face {
-  border-bottom-color: #b903d5;
+	border-bottom-color: #D56681;
 
-  &:hover {
-	h1 {
-	  span {
-		color: #b903d5;
-	  }
+	&:hover {
+		h1 {
+			span {
+				color: #D56681;
+			}
+		}
 	}
-  }
 }
 
 .makeup {
-  border-bottom-color: #BD2311;
+	border-bottom-color: #D56681;
 
-  &:hover {
-	h1 {
-	  span {
-		color: #BD2311;
-	  }
+	&:hover {
+		h1 {
+			span {
+				color: #D56681;
+			}
+		}
 	}
-  }
 }

@@ -15,7 +15,7 @@ const NailsPage = () => {
                 <div className="row align-items-center">
                     <div className="col-md-6 col-12">
                         <NailsService id={'nails'} />
-                        <h1 className='mt-lg-5 mb-md-0 mt-3 mb-3'>Il meglio per <span style={{color: '#F24699'}}> le tue mani.</span></h1>
+                        <h1 className='mt-lg-5 mb-md-0 mt-3 mb-3'>Il meglio per <span style={{color: '#D56681'}}> le tue mani.</span></h1>
                     </div>
                     <div className="col-md-6 col-12">
                         <ImageComponent alt={'unghie'} filename={'nailshead.jpg'}/>
@@ -24,7 +24,7 @@ const NailsPage = () => {
                 <div className="m-120">
                     <div className="row align-items-start">
                         <div className="col-md-6 col-sm-12">
-                            <h2 style={{color: '#F24699'}}>Semipermanente</h2>
+                            <h2 style={{color: '#D56681'}}>Semipermanente</h2>
                             <p>una struttura resistente ma flessibile.
                                 Creata per ristabilire la salute dell’unghia naturale, contenente infatti proteine,
                                 cheratina e
@@ -47,15 +47,15 @@ const NailsPage = () => {
                         <div className="col-md-5 col-12 mt-5 offset-md-1">
                             <h3>Manutenzione</h3>
                             <ul>
-                                <li style={{color: '#F24699', marginBottom: 12}}>
+                                <li style={{color: '#D56681', marginBottom: 12}}>
                             <span
-                                style={{color: '#fff'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
+                                style={{color: '#404040'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
                                 </li>
-                                <li style={{color: '#F24699', marginBottom: 12}}>
-                                    <span style={{color: '#fff'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
+                                <li style={{color: '#D56681', marginBottom: 12}}>
+                                    <span style={{color: '#404040'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
                                 </li>
-                                <li style={{color: '#F24699', marginBottom: 12}}>
-                                    <span style={{color: '#fff'}}>ripetere il refill ogni tre settimane (per unghie sensibili ogni due settimane e mezzo).</span>
+                                <li style={{color: '#D56681', marginBottom: 12}}>
+                                    <span style={{color: '#404040'}}>ripetere il refill ogni tre settimane (per unghie sensibili ogni due settimane e mezzo).</span>
                                 </li>
                             </ul>
                         </div>
@@ -89,15 +89,15 @@ const NailsPage = () => {
                         <div className="col-md-5 col-12 mt-5 offset-md-1">
                             <h3>Manutenzione</h3>
                             <ul>
-                                <li style={{color: '#F24699', marginBottom: 12}}>
+                                <li style={{color: '#D56681', marginBottom: 12}}>
                             <span
-                                style={{color: '#fff'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
+                                style={{color: '#404040'}}>Indossare i guanti per l’utilizzo di prodotti corrosivi;</span>
                                 </li>
-                                <li style={{color: '#F24699',marginBottom: 12}}>
-                                    <span style={{color: '#fff'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
+                                <li style={{color: '#D56681',marginBottom: 12}}>
+                                    <span style={{color: '#404040'}}>idratare le cuticole con olio di argan (preserva anche la lucentezza del lucido);</span>
                                 </li>
-                                <li style={{color: '#F24699',marginBottom: 12}}>
-                                    <span style={{color: '#fff'}}>Ripetere il refill ogni tre settimane (massimo quattro settimane se non sono troppo lunghe).</span>
+                                <li style={{color: '#D56681',marginBottom: 12}}>
+                                    <span style={{color: '#404040'}}>Ripetere il refill ogni tre settimane (massimo quattro settimane se non sono troppo lunghe).</span>
                                 </li>
                             </ul>
                         </div>
@@ -105,17 +105,17 @@ const NailsPage = () => {
                 </div>
             </div>
 
-            <div style={{backgroundColor:'#212121', padding: '40px 0', borderRadius: "350px 0 0 350px"}}>
+            <div style={{backgroundColor:'#AB6878', padding: '40px 0', borderRadius: "350px 0 0 350px"}}>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-3">
                             <h1>I nostri <br/> Partner </h1>
                         </div>
                         <div className="col-md-3 mt-sm-0 mt-5 col-12 text-md-center text-right">
-                            <ImageComponent alt={'indigo'} filename={'indigo.png'}/>
+                            <ImageComponent alt={'indigo'} filename={'indigo.webp'}/>
                         </div>
                         <div className="col-md-3 mt-sm-0 mt-5 col-12 text-md-center text-right">
-                            <ImageComponent alt={'indigo'} filename={'indigo.png'}/>
+                            <ImageComponent alt={'indigo'} filename={'indigo.webp'}/>
                         </div>
                     </div>
                 </div>
