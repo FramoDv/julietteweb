@@ -7,16 +7,16 @@
 
     svg {
       display: block;
-      width: 80%;
+      width: 70%;
       height: auto;
       margin: 0 auto;
     }
 
     h4 {
       font-size: 24px;
-      margin: 24px auto;
+      margin: 16px auto;
       text-align: center;
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
   }
 
@@ -48,9 +48,11 @@
 @media only screen and (max-width: 500px) {
   .services {
     .service {
+      svg {
+        width: 80%;
+      }
       h4 {
         font-size: 16px;
-        margin: 16px auto;
       }
     }
     .face {
