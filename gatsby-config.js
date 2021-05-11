@@ -38,7 +38,7 @@ module.exports = {
                 background_color: `#FF87A4`,
                 theme_color: `#FF87A4`,
                 display: `minimal-ui`,
-                icon: `src/images/juliette-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/juliette-icon.svg`, // This path is relative to the root of the site.
             },
         },
         {
