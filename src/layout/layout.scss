@@ -1,5 +1,5 @@
-html, body {
-  font-family: "montserrat", serif;
+body {
+  font-family: "Jost", serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -10,12 +10,16 @@ html, body {
   overflow: auto;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 tspan, input, textarea {
-  font-family: "montserrat", serif
+  font-family: "Jost", serif
 }
 
 html {
-  font: 112.5%/1.45em "montserrat", serif;
+  font: 112.5%/1.45em "Jost", serif;
   box-sizing: border-box;
 }
 
@@ -115,7 +119,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Jost", serif;
   font-size: 1em;
 }
 
@@ -240,7 +244,7 @@ textarea {
 }
 
 body {
-  color: #E9CEC0;
+  color: #fff;
 }
 
 ul.list-unstyled {
@@ -279,12 +283,9 @@ a.link-no-decoration {
 
 /** Home **/
 .homeWrapper{
-  background: #E9CEC0;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-items: center;
 }
+
 @media only screen and (max-width: 500px) {
 
 }
@@ -299,7 +300,7 @@ a.link-no-decoration {
 .service{
 
   h1{
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "EB Garamond", sans-serif;
     font-size: 60px;
     font-weight: 900;
     color: #fff;
@@ -308,19 +309,19 @@ a.link-no-decoration {
     }
   }
   h2{
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "EB Garamond", sans-serif;
     font-size: 48px;
     font-weight: 900;
     color: #fff;
   }
   h3{
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "EB Garamond", sans-serif;
     font-size: 36px;
     font-weight: 900;
     color: #fff;
   }
   p{
-    font-family: "montserrat", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 24px;
     color: #404040;
   }
@@ -328,7 +329,7 @@ a.link-no-decoration {
     padding: 0 0 0 24px;
     font-size: 24px;
     color: #404040;
-    font-family: "montserrat", sans-serif;
+    font-family: "Jost", sans-serif;
     li{
       color: #404040;
     }
@@ -371,6 +372,14 @@ a.link-no-decoration {
       font-size: 18px;
     }
   }
+}
+
+/** hero **/
+.hero{
+  background-size: cover;
+  background-position: top;
+  min-height: 760px;
+  position: relative;
 }
 
 /** Footer **/
