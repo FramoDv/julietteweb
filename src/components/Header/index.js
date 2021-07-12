@@ -8,6 +8,7 @@ import './Header.scss';
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpened, setMobileOpened] = useState(false);
+    const [openedOnce, setOpenedOnce] = useState(false);
 
     useEffect(() => {
         if (window) {
@@ -25,7 +26,7 @@ const Header = () => {
     },[mobileOpened])
 
     const listenScrollEvent = () => {
-        setScrolled((window.pageYOffset > 90));
+        setScrolled((window.pageYOffset > 60));
     }
 
     return <>
@@ -58,14 +59,14 @@ const Header = () => {
         </header>
 
         <div className={`d-md-none d-block ${mobileOpened ? "menu-open" : ""}`}>
-            <button className="menu-icon" onClick={() => setMobileOpened(!mobileOpened)}>
+            <button className="menu-icon" onClick={() => {setMobileOpened(!mobileOpened); setOpenedOnce(true);}}>
                 <span/>
                 <span/>
                 <span/>
             </button>
         </div>
         {mobileOpened &&  <div className="overlay" onClick={() => setMobileOpened(!mobileOpened)}/>}
-        <div className={`mobile-menu ${mobileOpened ? "menu-open" : "menu-closed"}`}>
+        {openedOnce && <div className={`d-md-none d-block mobile-menu ${mobileOpened ? "menu-open" : "menu-closed"}`}>
             <nav>
                 <Link to={'/services'}>
                     <span>Servizi</span>

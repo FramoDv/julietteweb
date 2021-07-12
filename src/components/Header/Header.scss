@@ -13,9 +13,23 @@ header {
   grid-column-gap: 16px;
   padding: 0 32px;
   transition: ease-in-out 300ms;
-  background-color: #fff;
+  background-color: #08080847;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-
+  color: #fff!important;
+  svg {
+	fill: #fff!important;
+  }
+  .logo {
+	svg {
+	  transition: ease-in-out 300ms;
+	  background: transparent;
+	  padding: 0;
+	  height: auto;
+	  width: auto;
+	  border-radius: 0;
+	  fill: #fff!important;
+	}
+  }
   nav {
 	display: grid;
 	align-items: center;
@@ -26,22 +40,11 @@ header {
 	margin: 0 auto;
 	text-align: center;
 
-	.logo {
-	  svg {
-		transition: ease-in-out 300ms;
-		background: transparent;
-		padding: 0;
-		height: auto;
-		width: auto;
-		border-radius: 0;
-	  }
-	}
-
 	a {
-	  color: #D56681;
+	  color: #fff!important;
 	  text-decoration: unset;
-	  font-size: 16px;
-	  text-transform: capitalize;
+	  font-size: 14px;
+	  text-transform: uppercase;
 	  font-weight: 500;
 
 	  span {
@@ -89,7 +92,16 @@ header {
 
 .header-scrolled {
   height: 60px;
-
+  background-color: #fff;
+  color: #D56681!important;
+  svg {
+	fill: #D56681!important;
+  }
+  nav{
+	a{
+	  color: #D56681!important;
+	}
+  }
   .logo {
 	svg {
 	  transition: ease-in-out 300ms;
@@ -191,6 +203,7 @@ header {
 	display: flex;
 	justify-content: start;
 	margin-bottom: 16px;
+	text-transform: initial;
 	svg {
 	  transition: ease-in-out 800ms;
 	  fill: #D56681;
