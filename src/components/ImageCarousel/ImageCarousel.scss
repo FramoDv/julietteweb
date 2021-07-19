@@ -1,0 +1,27 @@
+.our-clients-carousel {
+  overflow: visible !important;
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -user-drag: none;
+    width: 250px;
+  }
+  .custom-dots {
+    z-index: 2;
+    bottom: -55px;
+    button {
+      border: unset;
+      width: 8px;
+      height: 8px;
+      background: #C0C0C1;
+    }
+    .react-multi-carousel-dot--active button {
+      background: #1D0F41;
+    }
+  }
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+}

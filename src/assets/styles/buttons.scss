@@ -47,3 +47,15 @@
     background-color: #ffffff;
   }
 }
+
+.secondary-btn-black {
+  color: #212121;
+  background-color: transparent;
+  transition: ease-in 300ms;
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  &:hover {
+    color: #212121;
+    background-color: #ffffff;
+  }
+}

@@ -45,7 +45,7 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
-                    `Jost\:400,500`,
+                    `Jost\:300,400,500`,
                     `EB Garamond\:400,500`,
                 ],
                 display: 'swap'
