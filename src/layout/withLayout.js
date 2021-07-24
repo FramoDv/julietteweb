@@ -5,6 +5,7 @@ import PageContext from "./PageContext";
 import "./layout.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "../components/Header";
+import Footer from "../components/Footer/Footer.js";
 
 const withLayout = (customProps) => (PageComponent) => (props) => {
     const pageContextValue = {custom: customProps, page: props.pageContext};
@@ -26,9 +27,7 @@ const withLayout = (customProps) => (PageComponent) => (props) => {
                     <main>
                         <PageComponent {...props} />
                     </main>
-                    <footer>
-                        <span>© 2021, Juliette estetica & benessere | P. IVA 93932932939</span>
-                    </footer>
+                    <Footer/>
                 </PageContext.Provider>
             )}
         />

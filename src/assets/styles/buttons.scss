@@ -6,7 +6,6 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  display: inline-block;
   padding: 16px 32px 14px;
   text-decoration: none;
   cursor: pointer;
@@ -14,24 +13,40 @@
   max-width: 200px;
   box-sizing: border-box;
   margin: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 16px!important;
+    margin-right: 9px;
+  }
 }
 
 .primary-black-btn {
   color: #fff;
   background-color: #212121;
   transition: ease-in 300ms;
+  svg {
+    fill: #fff;
+  }
   &:hover {
     color: #fff;
     opacity: 0.8;
+    svg {
+      opacity: 0.8;
+    }
   }
 }
 
 .primary-btn {
-  color: #000000;
+  color: #212121;
   background-color: #ffffff;
   transition: ease-in 300ms;
+  svg {
+    fill: #212121;
+  }
   &:hover {
-    color: #000000;
+    color: #212121;
     opacity: 0.8;
   }
 }
@@ -42,9 +57,15 @@
   transition: ease-in 300ms;
   border: 1px solid #fff;
   box-sizing: border-box;
+  svg {
+    fill: #fff;
+  }
   &:hover {
-    color: #000;
+    color: #212121;
     background-color: #ffffff;
+    svg {
+      fill: #212121;
+    }
   }
 }
 
@@ -54,6 +75,9 @@
   transition: ease-in 300ms;
   border: 1px solid #212121;
   box-sizing: border-box;
+  svg {
+    fill: #212121;
+  }
   &:hover {
     color: #212121;
     background-color: #ffffff;

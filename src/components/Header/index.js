@@ -1,14 +1,19 @@
 import {Link} from "gatsby";
 import React, {useEffect, useState} from "react";
-import Logo from '../../assets/juliette-icon.svg';
-import Phone from '../../assets/phone.svg'
-import Location from '../../assets/location.svg'
+import LogoBlack from '../../assets/juliette-icon-black.svg';
+import LogoWhite from '../../assets/juliette-icon-white.svg';
+import Phone from '../../assets/phone.svg';
+import Location from '../../assets/location.svg';
+import {useLocation} from "@reach/router";
 import './Header.scss';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpened, setMobileOpened] = useState(false);
     const [openedOnce, setOpenedOnce] = useState(false);
+    const {pathname: path} = useLocation();
+    const isHome = path === "/" || path === ""
+    console.log(path,isHome);
 
     useEffect(() => {
         if (window) {
@@ -30,9 +35,9 @@ const Header = () => {
     }
 
     return <>
-        <header className={scrolled && 'header-scrolled'}>
+        <header className={`${!isHome && "h-black-txt"} ${scrolled && "header-scrolled"}`}>
             <Link to={'/'} className={'logo'}>
-                <Logo/>
+                {(scrolled || !isHome) ? <LogoBlack/> :  <LogoWhite/>}
             </Link>
             <nav className="d-none d-md-grid">
                 <Link to={'/services'}>
@@ -60,9 +65,9 @@ const Header = () => {
 
         <div className={`d-md-none d-block ${mobileOpened ? "menu-open" : ""}`}>
             <button className="menu-icon" onClick={() => {setMobileOpened(!mobileOpened); setOpenedOnce(true);}}>
-                <span/>
-                <span/>
-                <span/>
+                <span style={{background : ((scrolled && !mobileOpened) || !isHome) ? "#212121" : !mobileOpened ? "#fff" : "#D56681"}}/>
+                <span style={{background : ((scrolled && !mobileOpened) || !isHome) ? "#212121" : !mobileOpened ? "#fff" : "#D56681"}}/>
+                <span style={{background : ((scrolled && !mobileOpened) || !isHome) ? "#212121" : !mobileOpened ? "#fff" : "#D56681"}}/>
             </button>
         </div>
         {mobileOpened &&  <div className="overlay" onClick={() => setMobileOpened(!mobileOpened)}/>}

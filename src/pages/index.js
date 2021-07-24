@@ -1,55 +1,68 @@
 import React from "react"
 import Seo from "../components/seo"
 import withLayout from "../layout";
-import hero from '../images/hero.webp';
+import hero from '../images/hero.jpg';
 import Nails from '../assets/nailsService.svg';
 import Lashes from '../assets/lashesService.svg';
 import Spa from '../assets/spaService.svg';
 import Face from '../assets/faceService.svg';
 import Body from '../assets/bodyService.svg';
 import Makeup from '../assets/makeupService.svg';
+import Phone from '../assets/phone.svg';
 import {Link} from "gatsby";
 import ImageComponent from "../components/Ui/ImageComponent.js";
 import InstagramFeed from "../components/InstagramFeed/InstagramFeed.js";
 import ImageCarousel from "../components/ImageCarousel/ImageCarousel.js";
+import Fade from "react-reveal/Fade.js";
 
 const IndexPage = () => {
     return <div className={'homeWrapper'}>
-        <Seo title="Home"/>
+        <Seo title="Home" lang={"it"}/>
         <div className="hero" style={{backgroundImage: `url(${hero})`}}>
             <div className='container h-100'>
                 <div className="row h-100 align-items-center justify-content-center">
                     <div className="col-12">
-                        <h1> Lascia sempre spazio ad un po' di bellezza nella tua vita </h1>
-                        <div className="d-md-flex justify-content-center d-sm-block text-center ">
-                            <a href={""} className="my-btn primary-btn mb-sm-0 mb-3">
-                                Prenota
-                            </a>
-                            <Link to={"/servizi"} className="my-btn secondary-btn">
-                                Lista Servizi
-                            </Link>
-                        </div>
+                        <Fade bottom delay={400}>
+                            <h1> Lascia sempre spazio ad un po' di bellezza nella tua vita </h1>
+                        </Fade>
+                        <Fade bottom delay={500}>
+                            <div className="d-md-flex justify-content-center d-sm-block text-center ">
+                                <a href={'tel:0776 831060'} target={'_blank'} rel="noreferrer" className="my-btn primary-btn mb-sm-0 mb-3">
+                                   <Phone/> Prenota ora
+                                </a>
+                                <Link to={"/services"} className="my-btn secondary-btn">
+                                    Lista Servizi
+                                </Link>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
+
                 <div className="row d-md-flex d-none justify-content-center align-items-center"
-                     style={{marginTop: 100}}>
-                    <div className="col-md-4 info-item">
-                        <span>Contattaci</span>
-                        <p>T: 070 9485 7568<br/>info@beautysalon.com</p>
-                    </div>
-                    <div className="col-md-4 info-item">
-                        <span>Orario</span>
-                        <p>Lun: Chiuso
-                            <br/>Mar - Ven: 9:00 am — 18:30 pm
-                            <br/>Sab: 9:00 am — 17:00 pm
-                        </p>
-                    </div>
-                    <div className="col-md-4 info-item">
-                        <span>Location</span>
-                        <p>Via Cesare Balbo 40
-                            <br/>Sora, Frosinone<br/>
-                        </p>
-                    </div>
+                     style={{
+                         position: "absolute", bottom: 24, width: 800,
+                         left: "50%", WebkitTransform: "translateX(-50%)",
+                         transform: "translateX(-50%)"
+                     }}>
+                    <Fade bottom delay={700}>
+                        <div className="col-md-4 info-item">
+                            <span>Contattaci</span>
+                            <p>T: 070 9485 7568<br/>info@beautysalon.com</p>
+                        </div>
+                        <div className="col-md-4 info-item">
+                            <span>Orario</span>
+                            <p>Lun: Chiuso
+                                <br/>Mar - Ven: 9:00 am — 18:30 pm
+                                <br/>Sab: 9:00 am — 17:00 pm
+                            </p>
+                        </div>
+                        <div className="col-md-4 info-item">
+                            <span>Location</span>
+                            <p>Via Cesare Balbo 40
+                                <br/>Sora, Frosinone<br/>
+                            </p>
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>
@@ -89,19 +102,19 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center">
                         <Nails width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Nails </p>
-                        <p className="mt-3 text-desc" >Unghie sempre perfette con i notri
+                        <p className="mt-3 text-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Lashes width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Ciglia </p>
-                        <p className="mt-3 text-desc" >Le ciglia possono cambiare il tuo
+                        <p className="mt-3 text-desc">Le ciglia possono cambiare il tuo
                             sguardo! prova le nostre tecniche.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Spa width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Spa </p>
-                        <p className="mt-3 text-desc" > Massaggi e trattamenti corpo e
+                        <p className="mt-3 text-desc"> Massaggi e trattamenti corpo e
                             lampade, scopri in dettaglio i nostri servizi.</p>
                     </div>
                 </div>
@@ -110,7 +123,7 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center">
                         <Face width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Viso </p>
-                        <p className="mt-3 text-desc" >Unghie sempre perfette con i notri
+                        <p className="mt-3 text-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
@@ -126,8 +139,8 @@ const IndexPage = () => {
                             lampade, scopri in dettaglio i nostri servizi.</p>
                     </div>
 
-                    <div className="col-12 mt-5 text-center">
-                        <Link to={"/servizi"} className="my-btn primary-black-btn"> Lista Servizi</Link>
+                    <div className="col-12 mt-5 text-center d-flex justify-content-center">
+                        <Link to={"/services"} className="my-btn primary-black-btn"> Lista Servizi</Link>
                     </div>
                 </div>
             </div>
@@ -146,12 +159,15 @@ const IndexPage = () => {
                             Abbiamo iniziato come un piccolo centro di bellezza, Ma la nostra idea
                             principale era quella di creare il miglior centro di bellezza. Possono esserci
                             compromessi nel miglior centro estetico? La nostra risposta è sempre no, ci preoccupiamo
-                            di offrire la migliore qualità, assumiamo i migliori specialisti e forniamo il miglior servizio ai nostri
+                            di offrire la migliore qualità, assumiamo i migliori specialisti e forniamo il miglior
+                            servizio ai nostri
                             clienti. Questo approccio ci ha permesso di crescere e creare un team fantastico che è
                             appassionato in tutto ciò che facciamo, e faremo.
                         </p>
-                        <small className="d-block"><strong className="fst-italic text-capitalize"> Giulia Savona ( Founder )</strong></small>
-                        <Link to={"/about"} className="my-btn secondary-btn-black mt-5" style={{marginLeft: 0}}> Scopri di più</Link>
+                        <small className="d-block"><strong className="fst-italic text-capitalize"> Giulia Savona (
+                            Founder )</strong></small>
+                        <Link to={"/about"} className="my-btn secondary-btn-black mt-5" style={{marginLeft: 0}}> Scopri
+                            di più</Link>
                     </div>
                 </div>
             </div>
@@ -165,7 +181,8 @@ const IndexPage = () => {
                     </div>
                     <div className="col-md-4 offset-md-4 col-12">
                         <p className="mt-4 text-desc">
-                            Abbiamo scelto partner leader a livello mondiale nei vari ambiti dell'estetica per fornirvi sempre la miglior qualità sul mercato.
+                            Abbiamo scelto partner leader a livello mondiale nei vari ambiti dell'estetica per fornirvi
+                            sempre la miglior qualità sul mercato.
                         </p>
                     </div>
                 </div>
@@ -190,13 +207,15 @@ const IndexPage = () => {
                         <h1> Seguici </h1>
                     </div>
                     <div className="col-md-4 offset-md-4 col-12 mt-4">
-                        <p style={{color: "#fff"}} className="mt-4 text-desc"> Non farti scappare le ultime promozioni! seguici sui nostri social per tutte le novità.</p>
+                        <p style={{color: "#fff"}} className="mt-4 text-desc"> Non farti scappare le ultime promozioni!
+                            seguici sui nostri social per tutte le novità.</p>
                     </div>
                     <div className="col-md-12 d-md-block d-none mt-5">
                         <InstagramFeed/>
                     </div>
                     <div className="col-12 d-block d-md-none mt-5">
-                        <ImageCarousel images={['1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg']} dots={2}/>
+                        <ImageCarousel images={['1.webp', '2.webp', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp']}
+                                       dots={3}/>
                     </div>
                 </div>
             </div>

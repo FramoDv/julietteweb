@@ -1,0 +1,27 @@
+footer {
+  padding: 32px 0;
+  background: #e9cec0;
+  a {
+    color: #D56681 !important;
+    text-decoration: unset;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: ease-in-out 800ms;
+    padding-bottom: 4px;
+    border-bottom: 0;
+    &:hover {
+      color: #D56681;
+      border-bottom: 1px solid #D56681;
+      opacity: 0.7;
+    }
+    svg {
+      transition: ease-in-out 300ms;
+      width: 28px !important;
+      fill: #D56681;
+      & path{
+        fill: #D56681;
+      }
+    }
+  }
+}

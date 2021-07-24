@@ -9,6 +9,8 @@ tspan, input, textarea {
 html {
   font: 112.5%/1.45em "Jost", serif;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .text-center {
@@ -233,6 +235,8 @@ textarea {
 
 body {
   color: #fff;
+  overflow-x: hidden!important;
+  overflow-y: auto;
 }
 
 ul.list-unstyled {

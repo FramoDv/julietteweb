@@ -53,7 +53,6 @@ body {
   background-position: top;
   min-height: 760px;
   position: relative;
-  padding-top: 80px;
   display: flex;
   align-items: center;
 
@@ -83,6 +82,34 @@ body {
       text-transform: none;
       color: #ffffff;
     }
+  }
+}
+
+/** small hero **/
+.small-hero {
+  background-size: cover;
+  background-position: top;
+  min-height: 460px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  h1 {
+    color: #212121;
+    text-align: center;
+    margin: 0 auto 32px;
+    max-width: 800px;
+    font-size: 60px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 25px;
+    text-transform: none;
+    color: #212121;
+    max-width: 480px;
+    margin: 0 auto!important;
+    text-align: center;
   }
 }
 

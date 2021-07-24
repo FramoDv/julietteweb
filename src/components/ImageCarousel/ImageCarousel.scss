@@ -6,7 +6,8 @@
     -moz-user-drag: none;
     -o-user-drag: none;
     -user-drag: none;
-    width: 250px;
+    /*width: 250px;*/
+    padding-right: 24px;
   }
   .custom-dots {
     z-index: 2;

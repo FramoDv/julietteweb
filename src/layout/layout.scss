@@ -7,7 +7,24 @@
   .hero {
     min-height: 480px;
     h1 {
+      font-size: 30px;
       margin: 0 auto 48px;
     }
+    p{
+      font-size: 15px;
+    }
+  }
+  .small-hero {
+    min-height: 360px;
+    h1 {
+      font-size: 30px;
+      margin: 0 auto 24px;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+  .section-big{
+    padding: 64px 0;
   }
 }
