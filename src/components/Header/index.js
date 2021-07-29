@@ -1,7 +1,7 @@
 import {Link} from "gatsby";
 import React, {useEffect, useState} from "react";
-import LogoBlack from '../../assets/juliette-icon-black.svg';
-import LogoWhite from '../../assets/juliette-icon-white.svg';
+import LogoBlack from '../../assets/juliette-icon-line-black.svg';
+import LogoWhite from '../../assets/juliette-icon-line-white.svg';
 import Phone from '../../assets/phone.svg';
 import Location from '../../assets/location.svg';
 import {useLocation} from "@reach/router";
@@ -46,8 +46,8 @@ const Header = () => {
                 <Link to={'/about'}>
                     <span>Chi siamo</span>
                 </Link>
-                <Link to={'/matrimonio'}>
-                    <span>Matrimonio</span>
+                <Link to={'/faq'}>
+                    <span>Domande</span>
                 </Link>
                 <Link to={'/contacts'}>
                     <span>Contattaci</span>

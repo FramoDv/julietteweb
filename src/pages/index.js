@@ -25,20 +25,23 @@ const IndexPage = () => {
                         <Fade bottom delay={400}>
                             <h1> Lascia sempre spazio ad un po' di bellezza nella tua vita </h1>
                         </Fade>
-                        <Fade bottom delay={500}>
-                            <div className="d-md-flex justify-content-center d-sm-block text-center ">
-                                <a href={'tel:0776 831060'} target={'_blank'} rel="noreferrer" className="my-btn primary-btn mb-sm-0 mb-3">
-                                   <Phone/> Prenota ora
+
+                        <div className="d-md-flex justify-content-center d-sm-block text-center ">
+                            <Fade bottom delay={500}>
+                                <a href={'tel:0776 831060'} target={'_blank'} rel="noreferrer"
+                                   className="my-btn primary-btn mb-sm-0 mb-3 btn-home">
+                                    <Phone/> Prenota ora
                                 </a>
-                                <Link to={"/services"} className="my-btn secondary-btn">
+                                <Link to={"/services"} className="my-btn secondary-btn  btn-home">
                                     Lista Servizi
                                 </Link>
-                            </div>
-                        </Fade>
+                            </Fade>
+                        </div>
+
                     </div>
                 </div>
 
-                <div className="row d-md-flex d-none justify-content-center align-items-center"
+                <div className="row d-md-flex d-none justify-content-center align-items-start"
                      style={{
                          position: "absolute", bottom: 24, width: 800,
                          left: "50%", WebkitTransform: "translateX(-50%)",
@@ -47,7 +50,7 @@ const IndexPage = () => {
                     <Fade bottom delay={700}>
                         <div className="col-md-4 info-item">
                             <span>Contattaci</span>
-                            <p>T: 070 9485 7568<br/>info@beautysalon.com</p>
+                            <p>Tel: 0776 831060<br/>info@beautysalon.com</p>
                         </div>
                         <div className="col-md-4 info-item">
                             <span>Orario</span>
@@ -102,19 +105,19 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center">
                         <Nails width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Nails </p>
-                        <p className="mt-3 text-desc">Unghie sempre perfette con i notri
+                        <p className="text-desc service-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Lashes width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Ciglia </p>
-                        <p className="mt-3 text-desc">Le ciglia possono cambiare il tuo
+                        <p className="text-desc service-desc">Le ciglia possono cambiare il tuo
                             sguardo! prova le nostre tecniche.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Spa width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Spa </p>
-                        <p className="mt-3 text-desc"> Massaggi e trattamenti corpo e
+                        <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
                             lampade, scopri in dettaglio i nostri servizi.</p>
                     </div>
                 </div>
@@ -123,19 +126,19 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center">
                         <Face width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Viso </p>
-                        <p className="mt-3 text-desc">Unghie sempre perfette con i notri
+                        <p className="text-desc service-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Body width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Corpo </p>
-                        <p className="mt-3 text-desc">Le ciglia possono cambiare il tuo
+                        <p className="text-desc service-desc">Le ciglia possono cambiare il tuo
                             sguardo! prova le nostre tecniche.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
                         <Makeup width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Makeup </p>
-                        <p className="mt-3 text-desc"> Massaggi e trattamenti corpo e
+                        <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
                             lampade, scopri in dettaglio i nostri servizi.</p>
                     </div>
 
@@ -186,15 +189,19 @@ const IndexPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row justify-content-between align-items-center d-flex">
-                    <div className="col-md-3 col">
-                        <ImageComponent alt={'indigo'} filename={'indigo.webp'}/>
-                    </div>
-                    <div className="col-md-3 col">
-                        <ImageComponent alt={'shusa'} filename={'logo-shusa.webp'}/>
-                    </div>
-                    <div className="col-md-3 col">
-                        <ImageComponent alt={'artdeco'} filename={'artdeco.webp'}/>
+                <div className="row">
+                    <div className="col-md-10 offset-1 col-12">
+                        <div className="row justify-content-between align-items-center d-flex">
+                            <div className="col-md-3 col">
+                                <ImageComponent alt={'indigo'} filename={'indigo.webp'}/>
+                            </div>
+                            <div className="col-md-3 col">
+                                <ImageComponent alt={'shusa'} filename={'logo-shusa.webp'}/>
+                            </div>
+                            <div className="col-md-3 col">
+                                <ImageComponent alt={'artdeco'} filename={'artdeco.webp'}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
