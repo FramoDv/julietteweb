@@ -30,4 +30,31 @@
   .btn-home{
     margin: 0 auto!important;
   }
+
+  .navigation{
+    width: 100%;
+  }
+
+  /** Contacts **/
+  .middle-divided{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 650px;
+    .navigation{
+      width: 100%;
+      max-height: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #f6ebe7;
+    }
+
+    .imageSide{
+      overflow: hidden;
+      width: 100% !important;
+      height: 250px;
+    }
+  }
 }

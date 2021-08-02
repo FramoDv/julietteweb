@@ -88,7 +88,7 @@ body {
 /** small hero **/
 .small-hero {
   background-size: cover;
-  background-position: top;
+  background-position: center;
   min-height: 460px;
   position: relative;
   display: flex;
@@ -145,6 +145,29 @@ body {
 .service-desc{
   max-width: 300px;
   margin: 16px auto 0!important;
+}
+
+/** Contacts **/
+.middle-divided{
+  display: flex;
+  height: 470px;
+  .navigation{
+    width: 50%;
+    max-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f6ebe7;
+    & a{
+      max-width: 300px!important;
+    }
+  }
+
+  .imageSide{
+    width: 50%;  overflow: hidden;
+    height: 470px;
+  }
 }
 
 /** Footer **/

@@ -17,22 +17,22 @@ const Footer = () => {
                     <div className="row justify-content-center d-flex align-items-center mt-4 mb-5">
                         <div className="col">
                             <Link to={'/services'}>
-                                <span>Servizi</span>
+                                <span style={{fontSize:12}}>Servizi</span>
                             </Link>
                         </div>
                         <div className="col">
                             <Link to={'/about'}>
-                                <span>Chi siamo</span>
+                                <span style={{fontSize:12}}>Chi siamo</span>
                             </Link>
                         </div>
                         <div className="col">
                             <Link to={'/faq'}>
-                                <span>Domande</span>
+                                <span style={{fontSize:12}}>Domande</span>
                             </Link>
                         </div>
                         <div className="col">
                             <Link to={'/contacts'}>
-                                <span>Contattaci</span>
+                                <span style={{fontSize:12}}>Contattaci</span>
                             </Link>
                         </div>
                         <div className="col-12 mt-5 d-flex justify-content-center text-center align-items-center">

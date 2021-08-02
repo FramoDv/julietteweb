@@ -6,6 +6,7 @@ import "./layout.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "../components/Header";
 import Footer from "../components/Footer/Footer.js";
+import { Helmet } from "react-helmet"
 
 const withLayout = (customProps) => (PageComponent) => (props) => {
     const pageContextValue = {custom: customProps, page: props.pageContext};

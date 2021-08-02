@@ -279,10 +279,10 @@ header {
   top: 0;
   bottom: 0;
   z-index: 11;
-  width: 240px;
+  width: 280px;
   overflow: hidden;
-  right: -240px;
-  background: #fff;
+  right: -280px;
+  background: #212121;
   -webkit-animation: slide 0.4s forwards;
   -webkit-animation-delay: 0.4s;
   animation: slide-in 0.4s forwards;
@@ -331,12 +331,12 @@ header {
 
 @-webkit-keyframes slide-out {
   100% {
-    right: -240px;
+    right: -280px;
   }
 }
 
 @keyframes slide-out {
   100% {
-    right: -240px;
+    right: -280px;
   }
 }

@@ -2,7 +2,7 @@ import {graphql, StaticQuery} from "gatsby"
 import {GatsbyImage} from "gatsby-plugin-image"
 import React from "react";
 
-const ImageComponent = ({filename, alt}) => {
+const ImageComponent = ({filename, alt,className}) => {
     return <StaticQuery
         query={graphql`
             query {
@@ -31,7 +31,7 @@ const ImageComponent = ({filename, alt}) => {
                 return null;
             }
 
-            return <GatsbyImage image={image?.node?.childImageSharp?.gatsbyImageData} alt={alt}/>
+            return <GatsbyImage image={image?.node?.childImageSharp?.gatsbyImageData} alt={alt} />
         }}
     />
 }

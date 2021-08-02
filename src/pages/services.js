@@ -3,16 +3,16 @@ import Seo from "../components/seo"
 import withLayout from "../layout";
 import SmallHero from "../components/SmallHero/SmallHero.js";
 import ServiceItem from "../components/ServiceItem/ServiceItem.js";
+import servicesHero from "../images/innersechero.jpg";
 import Nails from '../assets/nailsService.svg';
 import Lashes from '../assets/lashesService.svg';
 import Spa from '../assets/spaService.svg';
 import Phone from "../assets/phone.svg";
 
-
 const ServicesPage = () => {
     return <div className={'homeWrapper'}>
         <Seo title="Servizi"/>
-        <SmallHero title={"Lista Servizi"}
+        <SmallHero title={"Lista Servizi"} bgImage={servicesHero}
                    description={"Miglioriamo la bellezza individuale con tecnologie e prodotti all'avanguardia e un servizio personalizzato. " +
                    "Il nostro team di professionisti è pronto a fornirti il miglior servizio che tu abbia mai avuto."}/>
 

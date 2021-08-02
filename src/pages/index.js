@@ -2,12 +2,12 @@ import React from "react"
 import Seo from "../components/seo"
 import withLayout from "../layout";
 import hero from '../images/hero.jpg';
-import Nails from '../assets/nailsService.svg';
-import Lashes from '../assets/lashesService.svg';
-import Spa from '../assets/spaService.svg';
-import Face from '../assets/faceService.svg';
-import Body from '../assets/bodyService.svg';
-import Makeup from '../assets/makeupService.svg';
+import Nails from "../assets/nailsService.svg";
+import Lashes from "../assets/lashesService.svg";
+import Spa from "../assets/spaService.svg";
+import Face from "../assets/faceService.svg";
+import Body from "../assets/bodyService.svg";
+import Makeup from "../assets/makeupService.svg";
 import Phone from '../assets/phone.svg';
 import {Link} from "gatsby";
 import ImageComponent from "../components/Ui/ImageComponent.js";
@@ -50,7 +50,7 @@ const IndexPage = () => {
                     <Fade bottom delay={700}>
                         <div className="col-md-4 info-item">
                             <span>Contattaci</span>
-                            <p>Tel: 0776 831060<br/>info@beautysalon.com</p>
+                            <p>Tel: 0776 831060<br/>info@juliettebenessere.com</p>
                         </div>
                         <div className="col-md-4 info-item">
                             <span>Orario</span>
@@ -75,7 +75,7 @@ const IndexPage = () => {
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-4 info-item text-center mb-4">
                         <strong className="text-uppercase" style={{fontSize: 13}}>Contattaci</strong>
-                        <p>Tel: 070 9485 7568<br/>info@beautysalon.com</p>
+                        <p>Tel: 0776 831060<br/>info@juliettebenessere.com</p>
                     </div>
                     <div className="col-md-4 info-item text-center mb-4">
                         <strong className="text-uppercase" style={{fontSize: 13}}>Orario</strong>
@@ -108,13 +108,13 @@ const IndexPage = () => {
                         <p className="text-desc service-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
-                    <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
+                    <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Lashes width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Ciglia </p>
                         <p className="text-desc service-desc">Le ciglia possono cambiare il tuo
                             sguardo! prova le nostre tecniche.</p>
                     </div>
-                    <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
+                    <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Spa width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Spa </p>
                         <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
@@ -123,19 +123,19 @@ const IndexPage = () => {
                 </div>
 
                 <div className="row mt-md-5 mt-4">
-                    <div className="col-md-4 col-12 text-center">
+                    <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Face width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Viso </p>
                         <p className="text-desc service-desc">Unghie sempre perfette con i notri
                             semipermanenti e gel.</p>
                     </div>
-                    <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
+                    <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Body width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Corpo </p>
                         <p className="text-desc service-desc">Le ciglia possono cambiare il tuo
                             sguardo! prova le nostre tecniche.</p>
                     </div>
-                    <div className="col-md-4 col-12 text-center mt-md-0 mt-4">
+                    <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Makeup width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Makeup </p>
                         <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
@@ -167,7 +167,7 @@ const IndexPage = () => {
                             clienti. Questo approccio ci ha permesso di crescere e creare un team fantastico che è
                             appassionato in tutto ciò che facciamo, e faremo.
                         </p>
-                        <small className="d-block"><strong className="fst-italic text-capitalize"> Giulia Savona (
+                        <small className="d-block mt-2"><strong className="fst-italic text-capitalize"> Giulia Savona (
                             Founder )</strong></small>
                         <Link to={"/about"} className="my-btn secondary-btn-black mt-5" style={{marginLeft: 0}}> Scopri
                             di più</Link>
@@ -190,7 +190,7 @@ const IndexPage = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-10 offset-1 col-12">
+                    <div className="col-md-10 offset-md-1 col-12">
                         <div className="row justify-content-between align-items-center d-flex">
                             <div className="col-md-3 col">
                                 <ImageComponent alt={'indigo'} filename={'indigo.webp'}/>
