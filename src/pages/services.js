@@ -7,7 +7,9 @@ import servicesHero from "../images/innersechero.jpg";
 import Nails from '../assets/nailsService.svg';
 import Lashes from '../assets/lashesService.svg';
 import Spa from '../assets/spaService.svg';
+import Face from "../assets/faceService.svg";
 import Phone from "../assets/phone.svg";
+import {Body} from "../../.cache/fast-refresh-overlay/components/overlay";
 
 const ServicesPage = () => {
     return <div className={'homeWrapper'}>
@@ -31,7 +33,7 @@ const ServicesPage = () => {
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
                             <div className="col-12 mt-4 mb-0">
-                                <h5 style={{fontWeight: 500, margin:0}}>Mani</h5>
+                                <h5 style={{fontWeight: 500, margin: 0}}>Mani</h5>
                             </div>
                             <ServiceItem title={"Manicure"} time={20} price={"15"}
                                          description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
@@ -50,7 +52,7 @@ const ServicesPage = () => {
                             <ServiceItem title={"French su richiesta"} time={60} price={"35"}
                                          description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
                             <div className="col-12 mt-4 mb-0">
-                                <h5 style={{fontWeight: 500, margin:0}}>Piedi</h5>
+                                <h5 style={{fontWeight: 500, margin: 0}}>Piedi</h5>
                             </div>
                             <ServiceItem title={"Pedicure"} time={40} price={"25"}
                                          description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
@@ -119,7 +121,7 @@ const ServicesPage = () => {
                         <div className="col-md-10 offset-md-1 col-12">
                             <div className="row">
                                 <div className="col-12 mt-4 mb-0">
-                                    <h5 style={{fontWeight: 500, margin:0}}>Massaggi</h5>
+                                    <h5 style={{fontWeight: 500, margin: 0}}>Massaggi</h5>
                                 </div>
                                 <ServiceItem title={"Massaggio relax total body"} time={40} price={"50"}
                                              description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
@@ -143,7 +145,7 @@ const ServicesPage = () => {
                                              description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
 
                                 <div className="col-12 mt-4">
-                                    <h5 style={{fontWeight: 500, margin:0}}>Solarium</h5>
+                                    <h5 style={{fontWeight: 500, margin: 0}}>Solarium</h5>
                                 </div>
                                 <ServiceItem title={"Lampada singola"} time={10} price={"8"}
                                              description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
@@ -166,8 +168,188 @@ const ServicesPage = () => {
             </div>
         </div>
 
-        <div className="section-big white-section">
+        <div className="section-big pink-section">
+            <div className='container'>
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                              style={{margin: "0 auto"}}/>
+                        <h1> Corpo </h1>
+                        <p className="mt-3 text-desc">I migliori trattamenti e soluzioni per un corpo perfetto!</p>
+                    </div>
+                </div>
+                <div className="row mt-5">
+                    <div className="col-md-10 offset-md-1 col-12">
+                        <div className="row">
+                            <ServiceItem title={"Scrub corpo"} time={120} price={"40"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Scrub Enzimatico"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento riducente oro rosso"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento idratante oro giallo"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento drenante oro nero"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento drenante con bendaggio"} time={45} price={"55"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento anticellulite oro bianco"} time={45} price={"55"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento iper idratante oro rosa"} time={45} price={"60"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <div className="col-12 mt-4">
+                                <h5 style={{fontWeight: 500, margin: 0}}>Pressoterapia</h5>
+                            </div>
+                            <ServiceItem title={"Trattamento pressoterapico"} time={40} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Pacchetto pressoterapia"} time={"10 sedute da 40"} price={"300"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                        </div>
 
+                        <div className="row mt-5">
+                            <div className="col-md-4 offset-md-4 col-12 justify-content-center d-flex">
+                                <a className="my-btn secondary-btn-black" href={'tel:0776 831060'}
+                                   target={'_blank'} rel="noreferrer" style={{maxWidth: 212}}>
+                                    <Phone/> Prenota ora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="section-big white-section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                             style={{margin: "0 auto"}}/>
+                        <h1> Epilazione e Laser </h1>
+                        <p className="mt-3 text-desc">Epilazione e trattamenti anti ricrescita.</p>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-md-10 offset-md-1 col-12">
+                            <div className="row">
+                                <div className="col-12 mt-4 mb-0">
+                                    <h5 style={{fontWeight: 500, margin: 0}}>Epilazione</h5>
+                                </div>
+                                <ServiceItem title={"Sopracciglia"} time={10} price={"5"}
+                                             description={null}/>
+                                <ServiceItem title={"Labbro"} time={10} price={"2"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Ascelle"} time={10} price={"10"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Braccia"} time={10} price={"15"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Gamba totale"} time={10} price={"28,00 (inguine compreso)"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Gamba parziale"} time={10} price={"15,00 (fino al ginocchio)"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Inguine"} time={10} price={"10"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Addome"} time={10} price={"20"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Schiena"} time={10} price={"15"}
+                                             description={"descrizione"}/>
+
+                                <div className="col-12 mt-4 mb-0">
+                                    <h5 style={{fontWeight: 500, margin: 0}}>Laser Diodo</h5>
+                                </div>
+                                <ServiceItem title={"Baffo"} time={10} price={"10"}
+                                             description={null}/>
+                                <ServiceItem title={"Mento"} time={10} price={"15"}
+                                             description={null}/>
+                                <ServiceItem title={"Viso Totale"} time={10} price={"35"}
+                                             description={null}/>
+                                <ServiceItem title={"Ascelle"} time={10} price={"25"}
+                                             description={null}/>
+                                <ServiceItem title={"Braccia"} time={10} price={"35"}
+                                             description={null}/>
+                                <ServiceItem title={"Schiena"} time={10} price={"35"}
+                                             description={null}/>
+                                <ServiceItem title={"Petto"} time={10} price={"35"}
+                                             description={null}/>
+                                <ServiceItem title={"Inguine"} time={10} price={"35"}
+                                             description={null}/>
+                                <ServiceItem title={"Gamba"} time={10} price={"35"}
+                                             description={null}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="section-big pink-section">
+            <div className='container'>
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <Face data-color className="d-md-none d-block mb-2" width={30} height={30}
+                              style={{margin: "0 auto"}}/>
+                        <h1> Viso </h1>
+                        <p className="mt-3 text-desc">I migliori trattamenti e soluzioni per il viso!</p>
+                    </div>
+                </div>
+                <div className="row mt-5">
+                    <div className="col-md-10 offset-md-1 col-12">
+                        <div className="row">
+                            <ServiceItem title={"Pulizia viso"} time={120} price={"30"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento lenitivo melissa"} time={45} price={"35"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento purificante smeraldo"} time={45} price={"35"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento acido mandelico"} time={45} price={"45"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento acido glicolico"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento Meraviglie di Giò"} time={45} price={"40"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Trattamento iper idratante oro rosa"} time={45} price={"50"}
+                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>>
+
+                        </div>
+
+                        <div className="row mt-5">
+                            <div className="col-md-4 offset-md-4 col-12 justify-content-center d-flex">
+                                <a className="my-btn secondary-btn-black" href={'tel:0776 831060'}
+                                   target={'_blank'} rel="noreferrer" style={{maxWidth: 212}}>
+                                    <Phone/> Prenota ora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="section-big white-section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                              style={{margin: "0 auto"}}/>
+                        <h1> Makeup </h1>
+                        <p className="mt-3 text-desc">Trucco perfetto per ogni occasione</p>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-md-10 offset-md-1 col-12">
+                            <div className="row">
+                                <div className="col-12 mt-4 mb-0">
+                                    <h5 style={{fontWeight: 500, margin: 0}}>Epilazione</h5>
+                                </div>
+                                <ServiceItem title={"Trucco giorno/sera"} time={60} price={"35"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Trucco Sposa"} time={120} price={"300"}
+                                             description={"descrizione"}/>
+                                <ServiceItem title={"Prova Trucco Sposa"} time={60} price={"35"}
+                                             description={"descrizione"}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 }
