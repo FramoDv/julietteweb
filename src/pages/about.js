@@ -9,7 +9,6 @@ import Love from '../assets/Love.svg';
 import Nature from '../assets/nature.svg';
 import Personalized from '../assets/personalized.svg';
 import Professional from '../assets/professional.svg';
-import {Link} from "gatsby";
 import Phone from "../assets/phone.svg";
 import ImageComponent from "../components/Ui/ImageComponent.js";
 
@@ -78,7 +77,7 @@ const AboutPage = () => {
             <div className='container'>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-5 col-12">
-                        <ImageComponent alt={'Giulia'} filename={'juli.jpeg'}/>
+                        <ImageComponent alt={'Team'} filename={'team.jpg'}/>
                     </div>
                     <div className="col-md-1 d-md-block d-none"/>
                     <div className="col-md-6 col-12 mt-md-0 mt-5">
@@ -110,25 +109,25 @@ const AboutPage = () => {
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
                             <div className="col-md-4 col-12 text-center mb-5">
-                                <div style={{maxHeight: 360, overflow: "hidden"}}>
-                                    <ImageComponent alt={'Giulia'} filename={'juli.jpeg'}/>
+                                <div style={{maxHeight: 400, overflow: "hidden"}}>
+                                    <ImageComponent alt={'Giulia'} filename={'juli1.jpg'}/>
                                 </div>
                                 <p className="mt-4 art-title" style={{fontSize:16}}> Giulia Savona </p>
                                 <p className="text-desc service-desc mt-1" style={{fontSize:16}}>Founder - Nail artist and Lash master</p>
                             </div>
                             <div className="col-md-4 col-12 text-center mb-5">
-                                <div style={{maxHeight: 360,overflow: "hidden"}}>
-                                    <ImageComponent alt={'Giulia'} filename={'juli.jpeg'}/>
+                                <div style={{maxHeight: 400,overflow: "hidden"}}>
+                                    <ImageComponent alt={'Giulia'} filename={'vale3.jpg'}/>
                                 </div>
                                 <p className="mt-4 art-title" style={{fontSize:16}}> Valentina Di Cocco </p>
                                 <p className="text-desc service-desc mt-1" style={{fontSize:16}}>Nail specialist</p>
                             </div>
                             <div className="col-md-4 col-12 text-center">
-                                <div style={{maxHeight: 360,overflow: "hidden"}}>
-                                    <ImageComponent alt={'Giulia'} filename={'juli.jpeg'}/>
+                                <div style={{maxHeight: 400,overflow: "hidden"}}>
+                                    <ImageComponent alt={'Giulia'} filename={'anna1.jpg'}/>
                                 </div>
-                                <p className="mt-4 art-title" style={{fontSize:16}}> Alice Mele </p>
-                                <p className="text-desc service-desc mt-1" style={{fontSize:16}}>Estetista</p>
+                                <p className="mt-4 art-title" style={{fontSize:16}}> Anna Coratti </p>
+                                <p className="text-desc service-desc mt-1" style={{fontSize:16}}> Beauty therapist </p>
                             </div>
                         </div>
                     </div>

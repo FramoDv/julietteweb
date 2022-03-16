@@ -88,10 +88,10 @@ const ServicesPage = () => {
                 <div className="row mt-5">
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
-                            <ServiceItem title={"Volume lashes (3D, 4D, 5D, 7D)"} time={"2h"} price={"70"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Ritocchi ogni 3 settimane"} time={"1h e 15"} price={"35"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                            <ServiceItem title={"Volume lashes ( 2D, 3D, 4D, 5D, 7D)"} time={"2h"} price={"70"}
+                                         description={"I volumi delle ciglia applicate vengono accuratamente scelti insieme dopo una perfetta analisi dell'occhio per poi creare il ventaglio più adatto alle proprie esigenze. "}/>
+                            <ServiceItem title={"Ritocchi ogni 3 settimane"} time={"1h e 15"} price={"30"}
+                                         description={"Il ritocco consiste nel pulire l'occhio con lo 'shampoo' apposito, rimuovere le ciglia cresciute ed applicarne di nuove. I ritocchi sono fondamentali per avere sempre uno sguardo perfetto ma soprattutto per tenere le proprie ciglia in salute "}/>
                         </div>
 
                         <div className="row mt-5">
@@ -124,29 +124,29 @@ const ServicesPage = () => {
                                     <h5 style={{fontWeight: 500, margin: 0}}>Massaggi</h5>
                                 </div>
                                 <ServiceItem title={"Massaggio relax total body"} time={60} price={"50"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Un'ora di puro relax per anima e corpo, eseguito sul lettino ad acqua termoriscaldata per regalare una sensazione di completo abbandono e permettere ai sensi di distaccarsi dalla realtà. "}/>
                                 <ServiceItem title={"Massaggio nuvola di spezie (Pinda)"} time={60} price={"60"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Manovre orientali rilassanti vi regaleranno relax e pace accompagnate dalle 'nuvole di spezie' ovvero involucri di cotone riscaldati contenenti spezie con effetto calmante che, posizionandole e muovendole sulle zone più rigide, andranno ad alleviare le contratture."}/>
                                 <ServiceItem title={"Decontratturante schiena"} time={30} price={"30"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Manovre specifiche andranno a decontrarre le contratture ed a sciogliere tutta la zona della schiena, attuando un accurato lavoro sul collo eliminando tensioni sulla cervicale."}/>
                                 <ServiceItem title={"Linfodrenaggio gambe"} time={40} price={"25"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"la circolazione è fondamentale per la salute delle gambe e del sistema non solo circolatorio ma anche linfatico. Questo massaggio aiuterà a scaricare i liquidi stagnanti così da agevolare il perfetto funzionamento dei due sistemi e sgonfiando le zone interessate per avvertire infine una sensazione di assoluta leggerezza."}/>
                                 <ServiceItem title={"Massaggio sensoriale"} time={60} price={"45"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Quanto ne sappiamo degli oli essenziali e dei loro poteri curativi? In questo massaggio si attuerà un mix di oli che penetreranno tutti i cinque sensi, liberando le tossine, le onde negative che tutti i giorni intossicano il nostro corpo e la nostra mente. Ogni olio essenziale sarà scelto all'inizio della seduta per personalizzare al meglio il massaggio assicurandone i benefici."}/>
                                 <ServiceItem title={"Massaggio a 4 mani"} time={60} price={"100"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Un massaggio con doppio beneficio e doppio relax: due operatrici massaggiano contemporaneamente un solo corpo che per tutto il tempo non si avrà la percezione della diversita delle mani."}/>
                                 <ServiceItem title={"Massaggio di coppia"} time={60} price={"100"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Condividere un momento con la persona che ami, è la cosa più bella: questa esperienza sicuramente vi regalerà emozioni uniche."}/>
                                 <ServiceItem title={"Massaggio anticellulite gambe"} time={40} price={"25"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Questo massaggio non si basa sulle manovre del linfodrenaggio ma bensì su manovre mirate ad eliminare nel tempo grasso e cellulite localizzati, tonificando il muscolo e rendendo la pelle più elastica."}/>
                                 <ServiceItem title={"Massaggio anticellulite addome e gambe"} time={40} price={"30"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Questo massaggio non si basa sulle manovre del linfodrenaggio ma bensì su manovre mirate ad eliminare nel tempo grasso e cellulite localizzati, tonificando il muscolo e rendend la pelle più elasica. Sull'addome verranno inoltre praticate manovre di sbloccaggio per le zone viscerali aiutando il corretto funzionamento di tutto l'apparato."}/>
 
                                 <div className="col-12 mt-4">
                                     <h5 style={{fontWeight: 500, margin: 0}}>Solarium</h5>
                                 </div>
                                 <ServiceItem title={"Lampada singola"} time={15} price={"8"}
-                                             description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                             description={"Abbronzarsi in sicurezza con la nostra lamapada per un'abbronzatura controllata e salutare che rimane nel tempo."}/>
                             </div>
 
                             <div className="row mt-5">
@@ -178,28 +178,28 @@ const ServicesPage = () => {
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
                             <ServiceItem title={"Scrub corpo"} time={60} price={"40"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Un unguento granuloso che va asportare via le cellule morte dello stato di pelle più superficiale."}/>
                             <ServiceItem title={"Scrub Enzimatico"} time={60} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Insieme di creme a base di acidi, che massaggiati sul corpo penetrano e rinnovano anche gli strati più profondi della pelle."}/>
                             <ServiceItem title={"Trattamento riducente oro rosso"} time={60} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Un trattamento che garantisce la riduzione di grasso nelle zone localizzate come addome fianchi e cosce."}/>
                             <ServiceItem title={"Trattamento idratante oro giallo"} time={60} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Trattamento con insieme di prodotti iper idratanti, per una pelle morbida ed idratata a lungo."}/>
                             <ServiceItem title={"Trattamento drenante oro nero"} time={60} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Una combo di prodotti drenanti, massaggiati e capaci di ottimizzare l'eliminazione di tossine e liquidi in eccesso."}/>
                             <ServiceItem title={"Trattamento drenante con bendaggio"} time={60} price={"55"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Trattamento con bende imbibite con mix iperdrenanti a freddo per l'eliminazione di tossine e liquidi in eccesso."}/>
                             <ServiceItem title={"Trattamento anticellulite oro bianco"} time={60} price={"55"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Manovre unite a questa speciale linea di prodotti Shusa per una effettiva riduzione dell'infiammazione edematosa localizzata."}/>
                             <ServiceItem title={"Trattamento iper idratante oro rosa"} time={60} price={"60"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"La linea oro rosa ha come obiettivo la sitrutturazione della pelle grazie ai fitoestrogeni contenuti nei prodotti che mantengono la pelle giovane e compatta."}/>
                             <div className="col-12 mt-4">
                                 <h5 style={{fontWeight: 500, margin: 0}}>Pressoterapia</h5>
                             </div>
                             <ServiceItem title={"Slim Press"} time={40} price={"25"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Pacchetto pressoterapia"} time={"5 sedute da 40"} price={"100"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
+                                         description={"Un macchinario di nuova generazione che tramite una lavorazione passiva del muscolo va a ridurre la cellulite, il grasso localizzato e di conseguenza a drenare via i liquidi in eccesso."}/>
+                            <ServiceItem title={"Pacchetto pressoterapia"} time={"10 sedute da 40"} price={"200"}
+                                         description={"La scelta che consigliamo per risultati ottimali e duraturi nel tempo."}/>
                         </div>
 
                         <div className="row mt-5">
@@ -284,26 +284,26 @@ const ServicesPage = () => {
                         <Face data-color className="d-md-none d-block mb-2" width={30} height={30}
                               style={{margin: "0 auto"}}/>
                         <h1> Viso </h1>
-                        <p className="mt-3 text-desc">I migliori trattamenti e soluzioni per il viso!</p>
+                        <p className="mt-3 text-desc">Trattamenti personalizzati e scelti accuratamente per te!</p>
                     </div>
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
-                            <ServiceItem title={"Pulizia viso"} time={120} price={"30"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento lenitivo melissa"} time={45} price={"35"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento purificante smeraldo"} time={45} price={"35"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento acido mandelico"} time={45} price={"45"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento acido glicolico"} time={45} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento Meraviglie di Giò"} time={45} price={"40"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>
-                            <ServiceItem title={"Trattamento iper idratante oro rosa"} time={45} price={"50"}
-                                         description={"Delicate cuticle work, buffing, and shaping. To finish, a relaxing hand massage, topped off with a perfect polish."}/>>
+                            <ServiceItem title={"Pulizia viso"} time={60} price={"30"}
+                                         description={"Un trattamento di pulizia adatto ad ogni tipo di pelle ed età."}/>
+                            <ServiceItem title={"Trattamento lenitivo melissa"} time={60} price={"35"}
+                                         description={"Insieme di prodotti con principi attivi lenitivi, utilizzando la linea Shusa melissa"}/>
+                            <ServiceItem title={"Trattamento purificante smeraldo"} time={60} price={"35"}
+                                         description={"Pelle impura? Con la linea Shusa smeraldo potrai trattare ogni tipo di discromia."}/>
+                            <ServiceItem title={"Trattamento acido mandelico"} time={60} price={"45"}
+                                         description={"L'unico acido applicabile tutto l'anno, un jolly per tutti i tipi di pelle."}/>
+                            <ServiceItem title={"Trattamento acido glicolico"} time={60} price={"50"}
+                                         description={"Utilizzabile solo d'inverno data la sua fotosensibilità, ideale per un azioe anti-age"}/>
+                            <ServiceItem title={"Trattamento Diamante Giallo"} time={60} price={"40"}
+                                         description={"Un trattamento preventivo multivitaminico per garantirti una pelle sempre giovane."}/>
+                            <ServiceItem title={"Trattamento Botox"} time={60} price={"50"}
+                                         description={"Un trattamento alternativo anti-age formato da mix di acidi e vitamine."}/>
 
                         </div>
 
@@ -332,15 +332,12 @@ const ServicesPage = () => {
                     <div className="row mt-5">
                         <div className="col-md-10 offset-md-1 col-12">
                             <div className="row">
-                                <div className="col-12 mt-4 mb-0">
-                                    <h5 style={{fontWeight: 500, margin: 0}}>Epilazione</h5>
-                                </div>
-                                <ServiceItem title={"Trucco giorno/sera"} time={60} price={"35"}
-                                             description={"descrizione"}/>
-                                <ServiceItem title={"Trucco Sposa"} time={120} price={"300"}
-                                             description={"descrizione"}/>
+                                <ServiceItem title={"Trucco giorno/sera"} time={90} price={"35"}
+                                             description={"Crea con noi il tuo look perfetto adatto per ad ogni condizione."}/>
+                                <ServiceItem title={"Trucco Sposa"} time={"2 ore"} price={"300"} isMinutes={false}
+                                             description={"Il notro team di professioniste ti accompagnera nella creazione del trucco perfetto nel giorno più importante."}/>
                                 <ServiceItem title={"Prova Trucco Sposa"} time={60} price={"35"}
-                                             description={"descrizione"}/>
+                                             description={"Sceglierai e proverai insieme a noi il makeup che andremo poi a realizzare nel tuo giorno."}/>
                             </div>
                         </div>
                     </div>
