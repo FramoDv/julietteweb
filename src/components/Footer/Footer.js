@@ -25,11 +25,11 @@ const Footer = () => {
                                 <span style={{fontSize:12}}>Chi siamo</span>
                             </Link>
                         </div>
-                        <div className="col">
+                       {/* <div className="col">
                             <Link to={'/faq'}>
                                 <span style={{fontSize:12}}>Domande</span>
                             </Link>
-                        </div>
+                        </div>*/}
                         <div className="col">
                             <Link to={'/contacts'}>
                                 <span style={{fontSize:12}}>Contattaci</span>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <span style={{color:"#212121"}}>© {new Date().getFullYear()}, Juliette estetica & benessere | P. IVA 93932932939</span>
+        <span style={{color:"#212121"}}>© {new Date().getFullYear()}, Juliette estetica & benessere | P. IVA 03002030603</span>
     </footer>
 }
 

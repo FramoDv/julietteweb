@@ -13,8 +13,12 @@ import Phone from "../assets/phone.svg";
 import ImageComponent from "../components/Ui/ImageComponent.js";
 
 const AboutPage = () => {
+    const keywords = "nails, unghie, manicure, gel, ricostruzione unghie, corpo, spa, viso, makeup, massaggi, pressoterapia, lashes, ciglia, epilazione, lampada, epilazione laser, appuntamenti, servizi, estetica, shusa, sora, centro estetico, solarium, storia, filosofia".split(',') || [];
+
     return <div className={'homeWrapper'}>
-        <Seo title="Su di noi"/>
+        <Seo title="Su di noi" description={"Un team di professioniste, per creare un angolo di benessere unico. Scopri la nostra storia e la nostra filosofia."}
+             keywords={keywords}
+             lang={"it"}/>
         <SmallHero title={"La nostra storia"} bgImage={aboutHero}
                    description={"Il nostro obiettivo principale era creare un angolo di benessere unico. Ci possono essere compromessi nel miglior centro benessere?"}/>
 
@@ -108,26 +112,35 @@ const AboutPage = () => {
                 <div className="row">
                     <div className="col-md-10 offset-md-1 col-12">
                         <div className="row">
-                            <div className="col-md-4 col-12 text-center mb-5">
+                            <div className="col-lg-3 col-md-4 col-12 text-center mb-5">
                                 <div style={{maxHeight: 400, overflow: "hidden"}}>
                                     <ImageComponent alt={'Giulia'} filename={'juli1.jpg'}/>
                                 </div>
                                 <p className="mt-4 art-title" style={{fontSize:16}}> Giulia Savona </p>
                                 <p className="text-desc service-desc mt-1" style={{fontSize:16}}>Founder - Nail artist and Lash master</p>
                             </div>
-                            <div className="col-md-4 col-12 text-center mb-5">
+                            <div className="col-lg-3 col-md-4 col-12 text-center mb-5">
                                 <div style={{maxHeight: 400,overflow: "hidden"}}>
                                     <ImageComponent alt={'Giulia'} filename={'vale3.jpg'}/>
                                 </div>
                                 <p className="mt-4 art-title" style={{fontSize:16}}> Valentina Di Cocco </p>
                                 <p className="text-desc service-desc mt-1" style={{fontSize:16}}>Nail specialist</p>
                             </div>
-                            <div className="col-md-4 col-12 text-center">
+                            <div className="col-lg-3 col-md-4 col-12 text-center">
                                 <div style={{maxHeight: 400,overflow: "hidden"}}>
                                     <ImageComponent alt={'Giulia'} filename={'anna1.jpg'}/>
                                 </div>
                                 <p className="mt-4 art-title" style={{fontSize:16}}> Anna Coratti </p>
                                 <p className="text-desc service-desc mt-1" style={{fontSize:16}}> Beauty therapist </p>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-12 text-center">
+                                <div style={{maxHeight: 400,overflow: "hidden"}}>
+                                    <ImageComponent alt={'Giulia'} filename={'melania.jpg'}/>
+                                </div>
+                                <p className="mt-4 art-title" style={{fontSize:16}}> Melania Maltesi </p>
+                                <p className="text-desc service-desc mt-1" style={{fontSize:16}}>
+                                    Master di Lashlifting, microblading & Pmu
+                                </p>
                             </div>
                         </div>
                     </div>

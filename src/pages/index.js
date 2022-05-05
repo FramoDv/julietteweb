@@ -16,10 +16,14 @@ import ImageCarousel from "../components/ImageCarousel/ImageCarousel.js";
 import Fade from "react-reveal/Fade.js";
 
 const IndexPage = () => {
+    const keywords = "nails, unghie, manicure, gel, ricostruzione unghie, corpo, spa, viso, makeup, massaggi, pressoterapia, lashes, ciglia, epilazione, lampada, epilazione laser, appuntamenti, servizi, estetica, shusa, sora, centro estetico, solarium, home".split(',') || [];
+
     return <div className={'homeWrapper'}>
-        <Seo title="Home" lang={"it"}/>
+        <Seo title="Juliette estetica & benessere - Home" lang={"it"} description={"Juliette, il tuo centro Estetico e del Benessere a Sora. Miglioriamo la bellezza individuale con tecnologie e prodotti all'avanguardia e un servizio personalizzato. " +
+        "Il nostro team di professionisti è pronto a fornirti il miglior servizio che tu abbia mai avuto."} keywords={keywords}/>
         <div className="hero" style={{backgroundImage: `url(${hero})`}}>
             <div className='container h-100'>
+                <h1 style={{display:"none"}}> Juliette estetica & benessere - Home </h1>
                 <div className="row h-100 align-items-center justify-content-center">
                     <div className="col-12">
                         <Fade bottom delay={400}>
@@ -117,7 +121,7 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Spa width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Spa </p>
-                        <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
+                        <p className="text-desc service-desc"> Massaggi trattamenti corpo e
                             lampade, scopri in dettaglio i nostri servizi.</p>
                     </div>
                 </div>
@@ -126,20 +130,17 @@ const IndexPage = () => {
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Face width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Viso </p>
-                        <p className="text-desc service-desc">Unghie sempre perfette con i notri
-                            semipermanenti e gel.</p>
+                        <p className="text-desc service-desc">Una vasta selezione di soluzioni per dare nuova luce al tuo viso.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Body width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Corpo </p>
-                        <p className="text-desc service-desc">Le ciglia possono cambiare il tuo
-                            sguardo! prova le nostre tecniche.</p>
+                        <p className="text-desc service-desc">Tecnologie avanzate come la nostra SlimPress e trattamenti idratanti di ultima generazione.</p>
                     </div>
                     <div className="col-md-4 col-12 text-center mt-md-0 mt-5">
                         <Makeup width={50} height={50}/>
                         <p className="text-uppercase mt-2" style={{fontSize: 14, fontWeight: 500}}> Makeup </p>
-                        <p className="text-desc service-desc"> Massaggi e trattamenti corpo e
-                            lampade, scopri in dettaglio i nostri servizi.</p>
+                        <p className="text-desc service-desc"> Trucco personalizzato e studiato appositamente per il tuo viso. Perfetta in ogni occasione. </p>
                     </div>
 
                     <div className="col-12 mt-5 text-center d-flex justify-content-center">
@@ -153,7 +154,7 @@ const IndexPage = () => {
             <div className='container'>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-5 col-12">
-                        <ImageComponent alt={'Giulia'} filename={'juli.jpeg'}/>
+                        <ImageComponent alt={'Giulia'} filename={'team.webp'}/>
                     </div>
                     <div className="col-md-1 d-md-block d-none"/>
                     <div className="col-md-6 col-12 mt-md-0 mt-5">
@@ -218,10 +219,12 @@ const IndexPage = () => {
                             seguici sui nostri social per tutte le novità.</p>
                     </div>
                     <div className="col-md-12 d-md-block d-none mt-5">
-                        <InstagramFeed/>
+                        <InstagramFeed />
+                        {/*<ImageCarousel images={['recut.jpg', '1.jpeg', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp']}
+                                       dots={3}/>*/}
                     </div>
                     <div className="col-12 d-block d-md-none mt-5">
-                        <ImageCarousel images={['1.webp', '2.webp', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp']}
+                        <ImageCarousel images={['recut.jpg', '1.jpeg', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp']}
                                        dots={3}/>
                     </div>
                 </div>

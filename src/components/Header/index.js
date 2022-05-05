@@ -46,9 +46,9 @@ const Header = () => {
                 <Link to={'/about'}>
                     <span>Chi siamo</span>
                 </Link>
-                <Link to={'/faq'}>
+                {/*<Link to={'/faq'}>
                     <span>Domande</span>
-                </Link>
+                </Link>*/}
                 <Link to={'/contacts'}>
                     <span>Contattaci</span>
                 </Link>
@@ -79,9 +79,9 @@ const Header = () => {
                 <Link to={'/about'}>
                     <span>Chi siamo</span>
                 </Link>
-                <Link to={'/faq'}>
+               {/* <Link to={'/faq'}>
                     <span>Domande</span>
-                </Link>
+                </Link>*/}
                 <Link to={'/contacts'}>
                     <span>Contattaci</span>
                 </Link>

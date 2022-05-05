@@ -3,21 +3,12 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import './ImageCarousel.scss';
 //images
-import one from "../../images/instagram/1.jpeg";
-import two from "../../images/instagram/2.jpeg";
-import three from "../../images/instagram/3.jpeg";
-import four from "../../images/instagram/4.jpeg";
-import five from "../../images/instagram/5.jpeg";
-import six from "../../images/instagram/6.jpeg";
-import seven from "../../images/instagram/7.jpeg";
 import ImageComponent from "../Ui/ImageComponent.js";
-
-const myImages = [one,two,three,four,five,six,seven];
 
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 2,
+        items: 4,
         paritialVisibilityGutter: 150
     },
     tablet: {
@@ -57,12 +48,12 @@ const ImageCarousel = ({  images, dots }) => {
 
     //todo resize all equals img
     return <Carousel ssr={true} draggable={true} partialVisbile={false} showDots={true}
-                     dotListClass="custom-dots" customDot={<CustomDot dots={dots} />}
+                     dotListClass="custom-dots" customDot={<CustomDot dots={dots}/>}
                      containerClass="our-clients-carousel" slidesToSlide={1}
                      responsive={responsive}
     >
         {images?.map((item, index) => {
-            return <ImageComponent alt={'instagram'} key={index} filename={item}/>
+            return <ImageComponent alt={'instagram'} key={index} filename={item} />
 
         })}
     </Carousel>

@@ -8,12 +8,19 @@ import Nails from '../assets/nailsService.svg';
 import Lashes from '../assets/lashesService.svg';
 import Spa from '../assets/spaService.svg';
 import Face from "../assets/faceService.svg";
+import Body from "../assets/bodyService.svg";
+import Makeup from "../assets/makeupService.svg";
 import Phone from "../assets/phone.svg";
-import {Body} from "../../.cache/fast-refresh-overlay/components/overlay";
+
 
 const ServicesPage = () => {
+    const keywords = "nails, unghie, manicure, gel, ricostruzione unghie, corpo, spa, viso, makeup, massaggi, pressoterapia, lashes, ciglia, epilazione, lampada, epilazione laser, appuntamenti, servizi, estetica, shusa, sora, centro estetico, solarium".split(',') || [];
+
     return <div className={'homeWrapper'}>
-        <Seo title="Servizi"/>
+        <Seo title="Servizi"
+             description={"Juliette ed il suo team di professionisti è pronto ad offrirti una vasta gamma di servizi per ogni tua esigenza. Vieni a scoprirli!"}
+             keywords={keywords}
+             lang={"it"}/>
         <SmallHero title={"Lista Servizi"} bgImage={servicesHero}
                    description={"Miglioriamo la bellezza individuale con tecnologie e prodotti all'avanguardia e un servizio personalizzato. " +
                    "Il nostro team di professionisti è pronto a fornirti il miglior servizio che tu abbia mai avuto."}/>
@@ -22,7 +29,7 @@ const ServicesPage = () => {
             <div className='container'>
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Nails data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Nails data-color className="d-block mb-2" width={48} height={48}
                                style={{margin: "0 auto"}}/>
                         <h1> Nails </h1>
                         <p className="mt-3 text-desc">Unghie sempre perfette con i notri
@@ -78,7 +85,7 @@ const ServicesPage = () => {
             <div className='container'>
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Lashes data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Lashes data-color className="d-block mb-2" width={48} height={48}
                                 style={{margin: "0 auto"}}/>
                         <h1> Extension Ciglia </h1>
                         <p className="mt-3 text-desc">Le ciglia possono cambiare il tuo
@@ -111,7 +118,7 @@ const ServicesPage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Spa data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Spa data-color className="d-block mb-2" width={48} height={48}
                              style={{margin: "0 auto"}}/>
                         <h1> Spa & Benessere </h1>
                         <p className="mt-3 text-desc">Massaggi e trattamenti corpo e lampade, scopri in dettaglio i
@@ -168,7 +175,7 @@ const ServicesPage = () => {
             <div className='container'>
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Body data-color className="d-block mb-2" width={48} height={48}
                               style={{margin: "0 auto"}}/>
                         <h1> Corpo </h1>
                         <p className="mt-3 text-desc">I migliori trattamenti e soluzioni per un corpo perfetto!</p>
@@ -219,7 +226,7 @@ const ServicesPage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Body data-color className="d-block mb-2" width={48} height={48}
                               style={{margin: "0 auto"}}/>
                         <h1> Epilazione e Laser </h1>
                         <p className="mt-3 text-desc">Epilazione e trattamenti anti ricrescita.</p>
@@ -281,7 +288,7 @@ const ServicesPage = () => {
             <div className='container'>
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Face data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Face data-color className="d-block mb-2" width={48} height={48}
                               style={{margin: "0 auto"}}/>
                         <h1> Viso </h1>
                         <p className="mt-3 text-desc">Trattamenti personalizzati e scelti accuratamente per te!</p>
@@ -324,7 +331,7 @@ const ServicesPage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <Body data-color className="d-md-none d-block mb-2" width={30} height={30}
+                        <Makeup data-color className="d-block mb-2" width={48} height={48}
                               style={{margin: "0 auto"}}/>
                         <h1> Makeup </h1>
                         <p className="mt-3 text-desc">Trucco perfetto per ogni occasione</p>
@@ -338,6 +345,8 @@ const ServicesPage = () => {
                                              description={"Il notro team di professioniste ti accompagnera nella creazione del trucco perfetto nel giorno più importante."}/>
                                 <ServiceItem title={"Prova Trucco Sposa"} time={60} price={"35"}
                                              description={"Sceglierai e proverai insieme a noi il makeup che andremo poi a realizzare nel tuo giorno."}/>
+                                <ServiceItem title={"Consulenza Microblading occhi e labbra"} time={40} price={"GRATIS"}
+                                             description={"Prenota una consulenza gratuita con la nostra Master Dermopigmentista Melania Maltesi, scopri con lei tutti i trattamenti adatti a te."}/>
                             </div>
                         </div>
                     </div>

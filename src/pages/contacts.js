@@ -10,8 +10,11 @@ import ImageComponent from "../components/Ui/ImageComponent.js";
 import Location from "../assets/location.svg";
 
 const ContactsPage = () => {
+    const keywords = "appuntamenti, contatti, contattaci, chiama, centro estetico, sora, email, aiuto, prenotazioni, pronota, raggiungici, indirizzo, manicure, gel, lampada, massaggi, solarium, ciglia, viso, corpo".split(',') || [];
+
     return <div className={'homeWrapper'}>
-        <Seo title="Contattaci"/>
+        <Seo title="Contattaci" description={"Juliette è sempre a disposizione in ogni canale social e non per ogni tua richiesta. Contattaci!"}
+             lang={"it"} keywords={keywords}/>
         <SmallHero title={"Contattaci"} bgImage={contactHero}
                    description={"Ci piacerebbe sentirti ed incontrarti di persona. Di seguito puoi trovare tutti i dettagli per contattarci. Ci vediamo presto!"}/>
 

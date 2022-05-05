@@ -5,10 +5,10 @@ import ImageComponent from "../Ui/ImageComponent.js";
 const InstagramFeed = () => {
     return <div className="insta-grid">
         <div className={"img-1"}>
-            <ImageComponent alt={'instagram'} filename={'1.webp'}/>
+            <ImageComponent alt={'instagram'} filename={'recut.jpg'}/>
         </div>
         <div className={"img-2"}>
-            <ImageComponent alt={'instagram'} filename={'2.webp'}/>
+            <ImageComponent alt={'instagram'} filename={'1.jpeg'}/>
         </div>
         <div className={"img-3"}>
             <ImageComponent alt={'instagram'} filename={'3.webp'}/>
